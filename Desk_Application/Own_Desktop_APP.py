@@ -68,10 +68,8 @@ class Application(tkinter.Frame):   # フレームオブジェクト作成、ア
         read_idx = ws['A2'].value - 1
         if not ws[f'B{read_idx}'].value:
             self.message['text'] = 'まだデータがありません'
-            ws['A2'].value = read_idx + 1
-            wb.save(file_name)
             time.sleep(2)
-            sys.exit(0)
+            sys.exit(0) # 何も保存せず終了します
         text = ws[f'B{read_idx}'].value
         ws['A2'] = read_idx
         self.message['text'] = text # 上のテキストを表示させる
