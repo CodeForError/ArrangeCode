@@ -1,1 +1,1 @@
-# ArrangeCode
+# ArrangeCodeです、元githubではメン限や他のものがあるため、新しく作って、こういう形で質問させていただきます
